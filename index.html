@@ -1,1 +1,89 @@
-hello kugou
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://www.css3train.com/example/shade.html -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>css3遮罩-css3实例站</title>
+<meta name="keywords" content="css3遮罩  CSS3 CSS3培训 css3实例">
+<meta name="description" content="css3遮罩、HTML5技术、WEB编程技术、前端研究、CSS3培训、css3实例">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta name="generator" content="Editplus ">
+<meta name="author" content="Author：张会杰,QQ：871925574">
+<meta name="robots" content="ALL">
+<meta name="copyright" content="张会杰-css3实例站"> 
+
+<style>
+*{margin:0px;padding:0px;}
+body{background:#000;margin:0px;padding:0px;font-size:14px;color:#fff;}
+.tips{width:800px;margin:0 auto;line-height:24px;padding-top:10px;}
+.bredcolor{color:#fff;}
+.shade{
+	position:absolute;left:50%;top:50%;margin-left:-407px;font-size:68px;font-weight: bold;color:#487a1b;
+	background:#333 -webkit-linear-gradient(-15deg,#000 5%,rgba(255,255,255,.7),rgba(255,255,255,.9),rgba(255,255,255,.7),#000 10%) no-repeat;
+	-webkit-box-reflect:below 0 -webkit-linear-gradient(transparent,transparent 50%,rgba(255,255,255,.6));
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+	-webkit-animation:cliptexttop 3s linear infinite;
+	text-transform:uppercase;
+}
+@-webkit-keyframes cliptexttop{
+	0%{background-position:left 0;}
+	100%{background-position:1200px 0;}
+}
+
+
+.animation{font-size: 80px; font-weight: bold; color: #055a69;
+	margin:0 auto;width:900px;
+	background:#333 -webkit-linear-gradient(-15deg,#000 5%,rgba(255,255,255,.8),rgba(250,255,255,1),rgba(255,255,255,.8),#000 25%) no-repeat;
+	-webkit-box-reflect:below 0 -webkit-linear-gradient(transparent,transparent 50%,rgba(255,255,255,.6));/*文字倒影*/
+	-webkit-background-clip:text; /*背景颜色只显示在文字上*/
+	/*-webkit-text-fill-color:transparent; 文字填充，transparent指透明填充*/
+	-webkit-animation:cliptexttop 2s linear infinite; /*添加动画*/
+	text-transform:uppercase; /*转换为大写*/
+}
+
+.masked{
+     background:url(images/paint.png);
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip:text;
+    -webkit-animation:masked-animation 20s linear infinite;
+    /*-webkit-animation-name:masked-animation;
+    -webkit-animation-duration:20s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;*/
+    color:#fff;
+    margin: 0;
+font-size: 80px;
+text-align: center;
+-webkit-box-reflect:below 0 -webkit-linear-gradient(transparent,transparent 50%,rgba(255,255,255,.6));/*文字倒影*/
+margin-top: 300px;
+}
+@-webkit-keyframes masked-animation {
+    0% {background-position:left bottom;}
+    100% {background-position:right bottom;}
+}
+</style>
+</head>
+<body>
+<section class="tips">
+  由于工作原因,本站只做safari实例。<br>
+  <p class="bredcolor">css3小技巧:</p>
+	在css2.0时代,text是不能做渐变，以图片做背景等，css3.0时代也是做不到的，是css3.0可以借助其他属性来完成的。<br>
+	-webkit-background-clip:text;  文本裁剪<br>
+	-webkit-text-fill-color:transparent;  文本颜色透明<br>
+	以上这两样做完后，你就可以做自己喜欢的文字了，比如加个banckground<br>
+	这几样只能做到让文本填充颜色或者背景图片等;<br>
+	光影的运动显然要有位置变化，所以要用keyframes来扶助完成<br>
+	qq群:197326136<br>
+</section>
+<section class="shade">
+  css3 background-clip
+</section>
+<section class="animation">
+	hello kugou 酷狗音乐
+</section>
+<div class="masked">
+	<h3>hello kugou 酷狗音乐</h3>
+</div>
+
+</body></html>
