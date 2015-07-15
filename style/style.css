@@ -1,0 +1,28 @@
+html{font-size:100px}
+*{margin:0;padding:0;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+table{border-collapse:collapse;border-spacing:0;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:400}
+ul,ol,li{list-style:none;}
+em,i{font-style:normal;}
+hr{height:1px;margin:5px 0;border:medium none;color:#ccc;background-color:#ccc;}
+a img{border:none;}
+input,img{vertical-align:middle;}
+img{ vertical-align:bottom;}
+input,select,textarea{-webkit-tap-highlight-color:rgba(0,0,0,0);border:0;border-radius:0}
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+body{color:#333;font-size:12px;font-family:arial;-webkit-text-size-adjust:none;background-color:#fff;}
+a{color:#025694;text-decoration:none;}
+body .none{display:none !important;}
+.cls:after {clear:both;content:".";display:block;height:0;line-height:0;visibility:hidden;}
+.cls {zoom:1;}
+/* 定义默认的链接样式 */
+a:link{color:#666; text-decoration:none;}
+a:visited{color:#666; text-decoration:none;}
+a:hover{color:#e70303; text-decoration:none;}
+a:active{color: #666;text-decoration:none; outline:none;}
+a:active, a:focus {outline:none;}
+.mt10{margin-top:10px;}
+.mt20{margin-top:20px;}.mr18{margin-right:18px;}
+.fl{float:left}
+.red{color:red;}
+.bold{font-weight:bold;}
