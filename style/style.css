@@ -26,3 +26,10 @@ a:active, a:focus {outline:none;}
 .fl{float:left}
 .red{color:red;}
 .bold{font-weight:bold;}
+
+/*go*/
+body{background: #cfd8dc}
+.container{text-align: center;}
+.title {padding:75px 0 25px;}
+.title h1{font-weight: bold; font-size: 5em; font-family: 'Raleway', Arial, sans-serif; color: #37474f;}
+
