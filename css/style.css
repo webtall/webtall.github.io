@@ -1,16 +1,17 @@
 ul,li{list-style-type: none;}
 /*go*/
-
+/*head*/
+.head{background-image: linear-gradient(to top,#fbfbfb,#f4f4f4); border-bottom:1px solid #fff; height: 32px; line-height: 32px; padding-left:3em;}
 body{background: #cfd8dc;}
 .bg{position: fixed;width:100%;z-index: -1;}
-.title {padding:25px 0 25px; text-align: center;}
-.title h1{font-weight: bold; font-size: 3em; font-family: 'Raleway', Arial, sans-serif; color: #37474f; line-height: 1em; margin-bottom: 0;}
+.title {padding:45px 0 75px; text-align: center;}
+.title h1{font-weight: bold; font-size: 9em; font-family: 'Raleway', Arial, sans-serif; color: #37474f; line-height: 1em; margin-bottom: 0;}
 .container{}
 .welcome{background: url(../images/font_bg.png); 
 	-webkit-text-fill-color:transparent; 
 	-webkit-background-clip:text; 
 	-webkit-animation:welcome-animation 30s linear infinite; 
-	-webkit-box-reflect:below 0 -webkit-linear-gradient(transparent,transparent 45%, rgba(255,255,255,.4));
+	-webkit-box-reflect:below -0.3em -webkit-linear-gradient(transparent,transparent 45%, rgba(255,255,255,.4));
 	/* text-shadow: 1px 1px 3px #143d67; */
 }
 @-webkit-keyframes welcome-animation{
@@ -19,5 +20,26 @@ body{background: #cfd8dc;}
 }
 
 /* main_nav */
-.main_nav{background: #ccc; height: 35px; line-height: 35px;}
-.main_nav div{float: left; width:30%;}
+.main_nav{ height: 80px; margin: 15px 0;display:-webkit-flex;display:flex;justify-content:center;}
+.button{border-radius: 5px; display: block; border: 1px solid #37474f; color: #37474f; max-width: 180px; min-width: 150px; text-align: center; margin:1em; position: relative; background: none;-webkit-backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale; text-decoration: none; float: left;}
+.button:hover{text-decoration: none; background-color:rgba(63, 81, 181, 0.1); color: #3f51b5; border-color:#3f51b5;}
+.button::after{content: attr(data-text); position: absolute;width:100%; height: 100%; top:0; left: 0; opacity: 0; color: #3f51b5; -webkit-transform:translate3d(0,25%,0);transform:translate3d(0,25%,0); text-decoration: none;}
+.button::after,.button span{display: block; padding:1em 2em;  text-decoration: none;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+.button:hover::after{
+	opacity: 1;
+	-webkit-transform:translate3d(0,0,0);
+	transform:translate3d(0,0,0);
+	text-decoration: none;	
+}
+.button:hover > span{
+	opacity: 0;
+	-webkit-transform:translate3d(0, -25%, 0);
+	transform:translate3d(0,-25%,0);
+}
+/* main_nav */
