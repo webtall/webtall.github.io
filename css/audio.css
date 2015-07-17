@@ -1,0 +1,66 @@
+@charset "utf-8";
+html{*text-overflow:ellipsis;zoom:expression(function(ele){ele.style.zoom = "1";document.execCommand("BackgroundImageCache",false,true);}(this));}
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;outline: 0;}
+body,button,input,select,textarea{font:12px/1.5 \5b8b\4f53,arial,sans-serif;}
+body{ background:#fff;zoom:expression(function(el){document.execCommand('BackgroundImageCache', false, true);el.style.zoom = '1';}(this));}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+address,cite,dfn,em,var{font-style:normal;}
+code,kbd,pre,samp{font-family:courier new,courier,monospace;}
+small{font-size:12px;}
+ul,ol{list-style:none;}
+a{text-decoration:none;outline: 0;color:#0579c6;}
+:focus { outline: 0; }
+button::-moz-focus-inner { padding: 0;border:0;}
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+legend{color:#000;}
+fieldset,img{border:0;}
+button,input,select,textarea{font-size:100%;resize:none;margin:0px;}
+table{border-collapse:collapse;border-spacing:0;}
+.middle { vertical-align:middle;}
+.hidden{display:none;}
+select {padding: 2px;font-family: Arial, Helvetica, sans-serif;vertical-align: middle;}
+img { vertical-align:middle;}
+/*css3*/
+input:focus,input:active,button:focus,button:active {outline: none;}
+.wPage {width:990px;margin:0px auto;}
+.cls:after {visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}
+.cls{zoom:1}
+.f-red {color:#F00}
+.isIE {border-bottom:1px solid #F00; text-align:center;padding:6px;background:#fcc;}
+body{background: #cfd8dc;}
+/*内容开始*/
+.audio_ui{width: 320px; height: 300px; position: absolute; top: 50%; left: 50%; margin-top:-150px; margin-left: -160px;}
+
+/*功能区*/
+.music_info{border-top-left-radius:5px; border-top-right-radius: 5px; background-color: #212121; height: 42px; background-image: url('../images/dark/sk-controlbg.png'); padding: 10px; color: #fff;}
+.music_line{position: relative; background: #0b0b0b;}
+.music_line_bg{height: 3px;
+	background: -webkit-linear-gradient(top,rgb(51,51,51),rgb(51,51,51)) left top/0px 100% no-repeat; 
+	background:-moz-linear-gradient(top,rgb(51,51,51),rgb(51,51,51)) left top/0px 100% no-repeat; 
+	background: -ms-linear-gradient(top,rgb(51,51,51),rgb(51,51,51)) left top/0px 100% no-repeat; margin-top: 8px; box-shadow: 0 1px 0 #212121; cursor: pointer;}
+.music_line_on{height: 3px; background: #999; position: absolute; top: 0px; left: 0;width: 50%; cursor: pointer;}
+.music_line_icon{height: 8px; width: 8px; background: #fff; border-radius: 20px; position: absolute; top: -2px; right: -1px; box-shadow: 1px 0 15px #0090ff; cursor: pointer; display: block;}
+.music_time_start{width: 80px;float: left;}
+.music_time_over{float: right;}
+.music_tool{background-color: #212121; }
+.music_tool_box{width: 120px; height: 34px; float: left;}
+.music_play,.music_pause{width: 32px; height: 34px; background: url(../images/dark/sk-dark.png) no-repeat -50px -132px; float: left; cursor: pointer;}
+.music_play:hover{background-position: -50px -167px;}
+.music_pause{background-position: -82px -132px; display: none;}
+.music_pause:hover{background-position: -82px -168px}
+.music_next,.music_pre{width: 20px; height: 32px; background: url(../images/dark/sk-dark.png) no-repeat 0 -64px; margin:0 10px; float: left; cursor: pointer;}
+.music_pre{background-position: 0 0}
+.music_next:hover{background-position:0 -96px}
+.music_pre:hover{background-position:  0 -32px}
+.music_volume{width: 80px; float: right;}
+.music_volume_icon{width: 26px; height: 32px; background: url(../images/dark/sk-dark.png) no-repeat -24px -120px; float: left; cursor: pointer;}
+.music_volume_icon:hover{background-position: -24px -152px}
+.music_volume_icon2{background-position: -24px -184px}
+.music_volume_icon2:hover{background-position: -24px -216px}
+.music_volume_bg{width:50px; background: #0d0d0d; height: 3px; float: left; margin-top: 15px; position: relative; cursor: pointer; }
+.music_volume_on{width: 100%; height: 3px; cursor: pointer; background-color: #333; position: absolute; top: 0; left: 0}
+/*歌曲列表*/
+.songs_list{ background-color: #252525; background-image:  url('../images/dark/sk-middleblock.png'); color: #ccc; padding: 10px; }
+.songs_list li{cursor:pointer;}
+.songs_list li:hover{color: #999}
