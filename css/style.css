@@ -5,7 +5,7 @@ ul,li{list-style-type: none;}
 
 body{background: #cfd8dc;}
 .bg{position: fixed;width:100%;z-index: -1;}
-.title {padding:45px 0 15px; text-align: center;}
+.title {padding:0 0 15px; text-align: center;}
 .title h1{font-weight: bold; font-size: 9em; font-family: 'Raleway', Arial, sans-serif; color: #37474f; line-height: 1em; margin-bottom: 0;}
 .container{}
 .welcome{background: url(../images/font_bg.png); 
