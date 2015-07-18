@@ -44,3 +44,109 @@ body{background: #cfd8dc;}
 	transform:translate3d(0,-25%,0);
 }
 /* main_nav */
+
+/*github.io动画*/
+
+.webtall{position: relative; top:-30px; left: 0px; height: 80px;}
+.webtall ul li{position: absolute; left: -40px; top:40px; width:40px; height: 40px; border-radius: 20px; color: #590078; font-weight: bold; font-size: 38px; margin-top: 20px; text-align: center; line-height: 40px;font-family: 'Raleway', Arial, sans-serif; background:rgba(255,255,255,.2);}
+
+.webtall ul li.webtall-li7{left:50%; margin-left: 202px;
+	-webkit-animation:webtall-li7 2s,webtall-li7r 2s,webtall-li7t 1.2s 4s,webtall-li7tc 3s 5.2s; -webkit-transform:rotate(360deg);
+}
+.webtall ul li.webtall-li6{left:50%; margin-left: 147px;
+	-webkit-animation:webtall-li6c 0.2s 0s,webtall-li6 1.8s 0.2s,webtall-li7r 1.8s 0.2s,webtall-li7t 1s 4.2s, webtall-li7tc 3s 5.2s;
+	-webkit-transform:rotate(360deg);
+}
+.webtall ul li.webtall-li5{left:50%; margin-left: 38px;
+	-webkit-animation:webtall-li6c 0.4s 0s, webtall-li5 1.6s 0.4s,webtall-li7r 1.6s 0.4s,webtall-li7t 0.8s 4.4s, webtall-li7tc 3s 5.2s;
+	-webkit-transform:rotate(360deg);
+}
+.webtall ul li.webtall-li4{left:50%; margin-left: -17px;
+	-webkit-animation:webtall-li6c 0.6s 0s,webtall-li4 1.4s 0.6s,webtall-li7r 1.4s 0.6s,webtall-li7t 0.6s 4.6s, webtall-li7tc 3s 5.2s;
+	-webkit-transform:rotate(360deg);
+}
+.webtall ul li.webtall-li3{left:50%; margin-left: -72px;
+	-webkit-animation:webtall-li6c 0.8s 0s,webtall-li3 1.2s 0.8s,webtall-li7r 1.2s 0.8s,webtall-li7t 0.4s 4.8s,webtall-li7tc 3s 5.2s;
+	-webkit-transform:rotate(360deg);
+}
+.webtall ul li.webtall-li2{left:50%; margin-left: -127px;
+	-webkit-animation:webtall-li6c 1s 0s,webtall-li2 1s 1s,webtall-li7r 1s 1s,webtall-li7t 0.2s 5s, webtall-li7tc 3s 5.2s;
+	-webkit-transform:rotate(360deg);
+}
+.webtall ul li.webtall-li1{left:50%; margin-left: -182px;
+	-webkit-animation:webtall-li6c 1.2s 0s,webtall-li1 0.8s 1.2s,webtall-li7r 0.8s 1.2s,webtall-li7t 0.1s 5.2s, webtall-li7tc 3s 5.2s;
+	-webkit-transform:rotate(360deg);
+}
+.webtall ul li.webtall-li0{left:50%; margin-left: -237px;
+	-webkit-animation:webtall-li6c 1.4s 0s,webtall-li0 0.6s 1.4s,webtall-li7r 0.6s 1.4s,webtall-li7t 0.1s 5.4s, webtall-li7tc 3s 5.2s;
+	-webkit-transform:rotate(320deg);
+}
+.webtall ul li.webtall-li8{background:none;left:50%; margin-left: 92px;
+	-webkit-animation:webtall-li6c 2.5s 0s,webtall-li8 1.5s 2.5s,webtall-li7t 0.5s 4.5s,webtall-li7tc 3s 5s;
+}
+.webtall-border{position: absolute; top:110px; z-index: 3px; border-bottom: 1px solid #780062; width:0; height: 0; overflow: hidden; -webkit-animation:webtall-border 2s; width:100%;}
+
+@-webkit-keyframes webtall-li7{
+	0%{left:-10%;}
+	100%{left:50%; margin-left: 202px;}
+}
+/*@-webkit-keyframes webtall-li7t{
+	0%{top:20px;}
+	100%{top:-10px;}
+}*/
+@-webkit-keyframes webtall-li7r{
+	0%{-webkit-transform:rotate(0deg);}
+	100%{-webkit-transform:rotate(360deg);}
+}
+/*@-webkit-keyframes webtall-li7tc{
+	0%{top:-10px;}
+	100%{top:-10px;}
+}*/
+
+@-webkit-keyframes webtall-li6c{
+	0%{left:-10%;}
+	100%{left:-10%;}
+}
+@-webkit-keyframes webtall-li6{
+	0%{left:-10%;}
+	100%{left:50%; margin-left: 147px;}
+}
+
+@-webkit-keyframes webtall-li5{
+	0%{left:-10%;}
+	100{left:50%; margin-left: 38px;}
+}
+@-webkit-keyframes webtall-li4{
+	0%{left:-10%;}
+	100%{left:50%; margin-left: -17px;}
+}
+@-webkit-keyframes webtall-li3{
+	0%{left:-10%;}
+	100%{left:50%; margin-left: -72px;}
+}
+@-webkit-keyframes webtall-li2{
+	0%{left:-10%;}
+	100%{left:50%; margin-left: -127px;}
+}
+@-webkit-keyframes webtall-li1{
+	0%{left:-10%;}
+	100%{left:50%; margin-left: -182px;}
+}
+@-webkit-keyframes webtall-li0{
+	0%{left:-10%;}
+	100%{left:50%; margin-left: -237px;}
+}
+@-webkit-keyframes webtall-li8{
+	0%{right:10%; top:-60px; margin-left: 257px;}
+	30%{left:50%; top:20px; margin-left: 202px;}
+	50%{left:50%; top:10px; margin-left: 177px;}
+	70%{left:50%; top:20px; margin-left: 147px;}
+	90%{left: 50%; top:10px; margin-left: 110px;}
+	100%{left: 50%; margin-left: 92px;}
+}
+@-webkit-keyframes webtall-border{
+	0%{width:0;}
+	100%{width:100%;}
+}
+
+/*github.io动画END*/
